@@ -46,7 +46,7 @@ def user_update(request):
             }
         )
     form.save()
-        
+    return redirect('contact:user_update')    
 
 def login_view(request):
     form = AuthenticationForm(request)
